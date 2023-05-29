@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #e1e2ed;
+  background-image: url('https://images.unsplash.com/photo-1450849608880-6f787542c88a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8c3BhY2V8fHx8fHwxNjg1MzQ3MjAy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .top-section {
-  background-color: aquamarine;
+  //background-color: aquamarine;
   text-align: center;
   padding: 100px 0;
   h1 {
@@ -21,9 +25,13 @@
   }
 }
 .content-section {
-  background-color: cadetblue;
+  //background-color: cadetblue;
   flex-grow: 1;
 }
 .bottom-section {
-  background-color: coral;
+  //background-color: coral;
+  display: flex;
+    app-tabs{
+      margin: auto;
+    }
 }
