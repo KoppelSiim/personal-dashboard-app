@@ -27,11 +27,12 @@
 .content-section {
   //background-color: cadetblue;
   flex-grow: 1;
+  min-height: 0;
 }
 .bottom-section {
   //background-color: coral;
   display: flex;
-    app-tabs{
-      margin: auto;
-    }
+  app-tabs {
+    margin: auto;
+  }
 }
