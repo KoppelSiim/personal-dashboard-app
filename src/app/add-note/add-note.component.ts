@@ -11,13 +11,18 @@ import { Router } from '@angular/router';
 })
 export class AddNoteComponent implements OnInit {
 
-  constructor(private noteService:NoteService, private router:Router){}
-  ngOnInit(): void {}
+  showValidationErrors: boolean
+  constructor(private noteService: NoteService, private router: Router) { }
+  ngOnInit(): void { }
 
-  onFormSubmit(form:NgForm){
-    //console.log(form.value)
+  onFormSubmit(form: NgForm){
+
+    if (form.invalid){
+      this.showValidationErrors = true
+      return
+    }
+
     const note = new Note(form.value.title, form.value.content)
-    console.log(note)
     this.noteService.addNote(note)
     this.router.navigateByUrl("/notes")
   }
